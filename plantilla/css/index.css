@@ -204,3 +204,34 @@ label{
 	width: 30%;
 }
 
+.collapse{
+	display: none;
+}
+
+.collapse.in{
+	border: 1px solid red;
+	display: block;
+	font-size: 0.97em;
+	list-style-type: none;
+}
+
+.collapse.in>li{
+	margin-left: -41px;
+}
+
+.collapse.in>li>a{
+	color: #fff;
+	display: block;
+	text-decoration: none;
+	padding: 12px;
+	padding-left: 30px;
+}
+
+.collapse.in>li>a:hover{
+	background-color: #000;
+}
+
+.collapse.in>li>a:visited{
+	text-decoration: none;
+	color: #fff;
+}
