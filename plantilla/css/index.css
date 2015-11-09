@@ -208,18 +208,17 @@ label{
 	display: none;
 }
 
-.collapse.in{
-	border: 1px solid red;
+.in{
 	display: block;
 	font-size: 0.97em;
 	list-style-type: none;
 }
 
-.collapse.in>li{
+.in>li{
 	margin-left: -41px;
 }
 
-.collapse.in>li>a{
+.in>li>a{
 	color: #fff;
 	display: block;
 	text-decoration: none;
@@ -227,11 +226,41 @@ label{
 	padding-left: 30px;
 }
 
-.collapse.in>li>a:hover{
+.in>li>a:hover{
 	background-color: #000;
 }
 
-.collapse.in>li>a:visited{
+.in>li>a:visited{
 	text-decoration: none;
 	color: #fff;
+}
+
+.table{
+	border-collapse: collapse;
+}
+
+.table>thead{
+	border-bottom: 3px solid #AFAFAF;
+}
+
+.table>thead>tr>th{
+	text-align: left;
+}
+
+.table>tbody>tr{
+	border-bottom: 1px solid #AFAFAF;
+	font-size: 0.9em;
+}
+
+.table>tbody>tr>td{
+	padding: 5px;
+}
+
+.table>tbody>tr:hover{
+	background-color: #C8C8C8 !important;
+	cursor: pointer;
+}
+
+.table>tbody>tr:nth-child(odd){
+	background-color: #E5E5E5;
 }
