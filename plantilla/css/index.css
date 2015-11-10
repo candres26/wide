@@ -33,33 +33,33 @@ html{
 	width: 15%;
 }
 .options{
+	border: 1px solid blue;
 	color: #FFF;
 	float: right;
 	height: 100%;
 	position: relative;
-	top: 0px;
 	right: 1%;
 }
 
 .options > ul{
-	list-style-type: none;
-	display: block;
+	border: 1px solid red;
 	height: 100%;
-	position: relative;
-	top: 0px;
-	margin-top: -1%;
+	list-style-type: none;
+	margin: 0px !important;
 }
 
 .options > ul > li{
 	display: inline-block;
 	height: 100%;
+	margin: 0px;
 }
 
 .options>ul>li>a{
+	border: 1px solid brown;
 	color: #fff;
 	display: block;
-	height: 75%;
-	padding-top: 10%;
+	height: 100%;
+	margin: 0px !important;
 	padding-left: 15px;
 	padding-right: 15px;
 	text-decoration: none;
