@@ -33,40 +33,37 @@ html{
 	width: 15%;
 }
 .options{
-	border: 1px solid blue;
 	color: #FFF;
 	float: right;
 	height: 100%;
 	position: relative;
 	right: 1%;
-}
-
-.options > ul{
-	border: 1px solid red;
-	height: 100%;
-	list-style-type: none;
 	margin: 0px !important;
 }
 
-.options > ul > li{
+.options > li{
 	display: inline-block;
 	height: 100%;
-	margin: 0px;
-}
-
-.options>ul>li>a{
-	border: 1px solid brown;
-	color: #fff;
-	display: block;
-	height: 100%;
+	float: left;
 	margin: 0px !important;
-	padding-left: 15px;
-	padding-right: 15px;
-	text-decoration: none;
 }
 
-.options>ul>li>a:hover{
+.options>li>a{
+	display: block;
+	height: 70%;
+	padding-top: 12%;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-decoration: none;
+	margin: 0px !important;
+}
+
+.options>li>a:hover{
 	background-color: #000;
+}
+
+.options>li>a:visited{
+	color: #FFF;
 }
 
 .nav-side{
@@ -270,6 +267,7 @@ label{
 	padding: 5px;
 }
 
+
 .table>tbody>tr:hover{
 	background-color: #C8C8C8 !important;
 	cursor: pointer;
@@ -277,4 +275,63 @@ label{
 
 .table>tbody>tr:nth-child(odd){
 	background-color: #E5E5E5;
+}
+
+.active{
+	background-color: #C8C8C8 !important;
+}
+
+.success{
+	background-color: #C1D5AD !important;
+}
+
+
+.info{
+	background-color: #BFE5F6 !important;
+}
+
+.warning{
+	background-color: #FFFEBD !important;
+}
+
+.danger{
+	background-color: #FFC1BE !important;
+}
+
+.controls-tab-nav{
+	text-align: center;
+	margin-top: 5px;
+	border: 1px solid red;
+}
+
+.tab-bac{
+	background-color: #EBEBEB;
+	border: 1px solid #D4D4D4;
+	display: inline-block;
+	margin: 0px !important;
+	padding: 5px 10px;
+	box-shadow: 0px 2.5px 1px #A2A2A2;
+}
+
+.tab-nex{
+	background-color: #EBEBEB;
+	border: 1px solid #D4D4D4;
+	display: inline-block;
+	margin: 0px !important;
+	padding: 5px 10px;
+	box-shadow: 0px 2.5px 1px #A2A2A2;
+}
+
+.controls-tab>li{
+	background-color: #EBEBEB;
+	border: 1px solid #D4D4D4;
+	display: inline-block;
+	margin: 0px !important;
+	padding: 5px 10px;
+	box-shadow: 0px 2.5px 1px #A2A2A2;
+}
+
+.controls-tab>li:hover{
+	background-color: #DDDDDD;
+	cursor: pointer;
 }
