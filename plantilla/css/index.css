@@ -49,11 +49,15 @@ html{
 }
 
 .options>li>a{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
 	display: block;
-	height: 70%;
-	padding-top: 12%;
+	height: 100%;
+	padding-top: 10%;
 	padding-left: 20px;
 	padding-right: 20px;
+	position: relative;
 	text-decoration: none;
 	margin: 0px !important;
 }
@@ -83,7 +87,7 @@ html{
 	z-index: 200;
 }
 .list-menu{
-	
+	margin-top: -1px;
 }
 
 .list-menu>li{
@@ -105,6 +109,11 @@ html{
 
 .list-menu>li>a:hover{
 	background-color: #000;
+}
+
+.list-menu-active{
+	background-color: #000;
+	color: #5C729C !important;
 }
 
 .content{
