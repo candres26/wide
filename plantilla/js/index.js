@@ -1,4 +1,4 @@
-function dropdown(element){
+function dropdown(){
 	var ele = document.querySelector('.collapse');
 	if(ele.classList.contains('in')){
 		ele.classList.remove('in');
