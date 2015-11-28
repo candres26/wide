@@ -1,8 +1,27 @@
-function dropdown(){
-	var ele = document.querySelector('.collapse');
+function dropdown(element){
+	var ele = element.querySelector('.collapse');
 	if(ele.classList.contains('in')){
 		ele.classList.remove('in');
 	}else{
 		ele.classList.add('in');
+	}
+}
+
+function dropdownMenu(element){
+	var opt = document.querySelectorAll('.options .list-collapsed');
+	var i;
+	var ele = element.querySelector('.list-collapsed');
+	for(i = 0; i < opt.length; i++){
+		if(opt[i].classList.contains('collapse')){
+			if(ele == opt[i]){
+				if(ele.classList.contains('collapse')){
+					ele.classList.remove('collapse');
+				}else{
+					ele.classList.add('collapse');
+				}
+			}
+		}else{
+			opt[i].classList.add('collapse');
+		}
 	}
 }
