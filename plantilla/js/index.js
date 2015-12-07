@@ -25,3 +25,12 @@ function dropdownMenu(element){
 		}
 	}
 }
+
+function acordeon(element){
+	var ele = element.querySelector('.section-content');
+	if(ele.classList.contains('open')){
+		ele.classList.remove('open');
+	}else{
+		ele.classList.add('open');
+	}
+}
