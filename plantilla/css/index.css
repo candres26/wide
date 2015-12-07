@@ -1,6 +1,18 @@
+@font-face{
+  font-family: "Roboto-Regular";
+  src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+}
+
+@font-face{
+  font-family: "RobotoCondensed-Regular";
+  src: url("../fonts/RobotoCondensed-Regular.ttf") format("truetype");
+}
+
+
 body,
 html{
-	font-family: Arial,Tahoma;
+	font-family: "Roboto-Regular","RobotoCondensed-Regular",Arial,Tahoma;
+	font-size: 14px;
 	height: 100%;
 	margin: 0;
 	padding: 0;
@@ -178,6 +190,7 @@ html{
 	position: relative;
 	height: 93%;
 	width: 85%;
+	font-size: 0.9em;
 }
 
 .content-wrapper{
@@ -333,11 +346,17 @@ label{
 }
 
 .table>thead{
-	border-bottom: 3px solid #AFAFAF;
+	background: #000;
+	color: #fff;
+	font-size: 0.9em;
+	text-align: center;
 }
 
 .table>thead>tr>th{
+	padding-top: 5px;
+	padding-bottom: 5px;
 	text-align: left;
+	text-align: center;
 }
 
 .table>tbody>tr{
@@ -345,8 +364,17 @@ label{
 	font-size: 0.9em;
 }
 
+.table-scroll>thead,
+.table-scroll>tbody{
+	display: block;
+	overflow-y: scroll;
+	overflow-x: hidden; 
+	height: 50px;
+}
+
 .table>tbody>tr>td{
 	padding: 5px;
+	text-align: center;
 }
 
 
@@ -357,6 +385,40 @@ label{
 
 .table>tbody>tr:nth-child(odd){
 	background-color: #E5E5E5;
+}
+
+.controls-tab-nav{
+	text-align: center;
+}
+
+.controls-tab-nav>ul>li{
+	display: inline-block;
+	background: #F0F0F0;
+	margin: 0px !important;
+	border: 1px solid #979797;
+}
+
+.controls-tab-nav>ul>li>a{
+	color: #777777;
+	display: block;
+	padding: 5px 10px;
+	text-decoration: none;
+	margin: 0px !important;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+.controls-tab-nav>ul>li>a:hover{
+	background-color: #E5E5E5;
+}
+
+.controls-tab-nav>ul>li.control-back{
+	border-radius: 5px 0px 0px 5px;
+}
+
+.controls-tab-nav>ul>li.control-next{
+	border-radius: 0px 5px 5px 0px;
 }
 
 .active{
@@ -453,4 +515,51 @@ button.danger{
 
 /* Fin tabs*/
 
+/* Components*/
+.panel{
+	border: 1px solid transparent;
+	border-radius: 4px;
+	width: 100%;
+	box-sizing: border-box;
+}
 
+.panel > .header-panel{
+	padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.panel-blue{
+	border-color: #005BAA;
+}
+
+.panel-blue > .header-panel{
+	color: #fff;
+    background-color: #337ab7;
+    border-color: #337ab7;
+}
+
+.panel-red{
+	border-color: #B40E28;
+}
+
+.panel-red > .header-panel{
+	color: #fff;
+    background-color: #F0383F;
+    border-color: #F0383F;
+}
+
+.header-panel > .title-panel{
+	margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    color: inherit;
+}
+
+.panel > .content-panel{
+	padding: 5px;
+}
+
+.
+/* Fin Components*/
