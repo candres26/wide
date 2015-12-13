@@ -34,3 +34,8 @@ function acordeon(element){
 		ele.classList.add('open');
 	}
 }
+
+function valInput(element){
+	var ele = element;
+	document.getElementById("text_input").innerHTML = ele;
+}
