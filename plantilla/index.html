@@ -6,6 +6,10 @@
 	<link rel="stylesheet" href="css/index.css">
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 	<script src="js/index.js"></script>
+	<script src="js/Chart.js"></script>
+	<script src="js/simulatorChart.js"></script>
+	<script src="js/graficas.js"></script>
+	<script src="js/builder.js"></script>
 </head>
 <body>
 	<div class="general-cont">
@@ -169,7 +173,7 @@
 					  	<div class="field-group">
 					  		<div class="file-group">
 								<div id="div_file">
-									<i class="fa fa-file-code-o"></i> <span id="texto">Adjuntar Archivo</span>
+									<i class="fa fa-file-code-o"> </i> <span id="texto">Adjuntar Archivo</span>
 									<input type="file" id="btn_enviar" onchange="valInput(this.value);">
 								</div>
 								<div class="path-file" id="text_input">
@@ -185,6 +189,51 @@
 						<button class="btn warning" type="submit">warning</button>
 						<button class="btn success" type="submit">sucess</button>
 					</div>
+					<div class="col-lg-6">
+						<div class="panel panel-blue">
+							<div class="header-panel">
+								<h3 class="title-panel"><i class="fa fa-bar-chart"></i> Gráfico 1</h3>
+							</div>
+							<div class="content-panel">
+								<canvas id="canvas"></canvas>
+								<ul id="canvasLegendChart"></ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="panel panel-red">
+							<div class="header-panel">
+								<h3 class="title-panel"><i class="fa fa-bar-chart"></i> Gráfico 2</h3>
+							</div>
+							<div class="content-panel">
+								<canvas id="mycanvas"></canvas>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-12">
+						<div class="panel panel-blue">
+							<div class="header-panel">
+								<h3 class="title-panel"><i class="fa fa-bar-chart"></i> Gráfico 3</h3>
+							</div>
+							<div class="content-panel">
+								<canvas id="mycanvas2"></canvas>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-12">
+						<div class="panel panel-red">
+							<div class="header-panel">
+								<h3 class="title-panel"><i class="fa fa-bar-chart"></i> Gráfico 7</h3>
+							</div>
+							<div class="content-panel">
+								<div class="canvas-holder">
+									<canvas id="canvasprueba"></canvas>
+									<ul id="canvasLegend"></ul>
+								</div>
+							</div>
+						</div>
+					</div>
+
 				</form>
 				<div style="clear: both;"></div>
 			</div>
